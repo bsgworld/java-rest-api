@@ -4,7 +4,7 @@
 
 ## Requirements
 
-Java 1.7+
+Java 1.7+	
 
 ## Installation
 
@@ -31,6 +31,7 @@ mvn install:install-file -Dfile=RestClient-1.0.jar
 
 ## Example
 
+```java
 try (SmsClient smsClient = new SmsClient("YOUR_API_KEY")) {
 	//Log response
 	smsClient.getJerseyClient().register(new LoggingFilter());
@@ -102,7 +103,7 @@ try (HlrClient restClient = new HlrClient("YOUR_API_KEY")) {
 	hlrRequests.add(new HlrRequest("380972920001", UUID.randomUUID().toString().substring(0, 13), null, "http://someurl.com/callback"));
 	HlrData createHlr = restClient.createHlr(hlrRequests);
 }
-
+```
 
 ## Support
 
