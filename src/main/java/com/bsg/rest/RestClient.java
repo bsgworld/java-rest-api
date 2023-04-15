@@ -113,7 +113,7 @@ public abstract class RestClient implements Closeable {
         return client;
     }
 
-    private static final String DEFAULT_SERVICE_URL = "https://app.bsg.hk/rest";
+    private static final String DEFAULT_SERVICE_URL = "https://api.bsg.world/rest";
 
     private static final String GET_BALANCE_METHOD = "common/balance";
 
