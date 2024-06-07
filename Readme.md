@@ -1,20 +1,31 @@
-# com.bsg.rest
+# BSG REST API. Free SMS API - Java com.bsg.rest
 
-Библиотека позволяет работать с REST сервисом BSG. Поддерживается автоматическая сериализация/десериализация в Java объекты
+The library enables working with the BSG REST service. It supports automatic serialization/deserialization into Java objects
+The BSG API enables to send mass **SMS campaigns**, send single **transactional SMS**, **Viber campaigns**, and verify phone numbers using **HLR requests**. There are no charges for API usage, you only pay fors for the messages sent.
+
+### Pricing
+
+Prices for sending messages can be found here: [Prices](https://bsg.world/pricing-sms/?utm_source=github&utm_medium=referral&utm_campaign=java)
 
 ## Requirements
 
 Java 1.7+	
 
+### How to use API
+
+- [Sign up](https://app.bsg.world/auth/signup?utm_source=github&utm_medium=referral&utm_campaign=java) for a free account
+- Get Live Api Key [here](https://app.bsg.world/integration/remote?utm_source=github&utm_medium=referral&utm_campaign=java)
+- Go through the [API documentation](https://bsg.world/documentations/rest-api/sms-api/sending-sms/?utm_source=github&utm_medium=referral&utm_campaign=java)
+
 ## Installation
 
-Эта библиотека сопровождается файлом pom.xml, что позволяет использовать Maven для его инсталляции в локальный репозиторий.
 
-mvn install:install-file -Dfile=RestClient-1.0.jar
+This library is accompanied by a pom.xml file, which allows using Maven to install it into the local repository.
 
-Так же можно установить его, загрузив исходные коды пакета в виде Zip архива или клонировав этот репозиторий. Все компоненты этой библиотеки загружают зависимости автоматически.
+`mvn install:install-file -Dfile=RestClient-1.0.jar`
+You can also install it by downloading the package's source code as a Zip archive or cloning this repository. All components of this library automatically download dependencies.
 
-Для использования библиотеки необходимо добавить в pom.xml dependencies
+To use the library, you need to add dependencies to your pom.xml file.
 
         <dependency>
             <groupId>com.bsg</groupId>
@@ -106,9 +117,8 @@ try (HlrClient restClient = new HlrClient("YOUR_API_KEY")) {
 ```
 
 ## Support
-
-Если у вас возникли сложности или вопросы по использованию пакета, создайте обсуждение в данном репозитории или напишите на электронную почту.
+If you encounter any difficulties or have questions regarding the use of the package, create a discussion in this repository or send an email.
 
 ## Documentation	
 
-Документацию API можно получить из исходных кодов пакета
+You can obtain the API documentation from the source code of the package.
